@@ -8,37 +8,65 @@ namespace DIP
 {
     public static class Factory
     {
-        public static IPerson CreateAPerson(Enums.PersonType persoana)
+        public static IPerson CreateAPerson(PersonType person)
         {
-            switch (persoana)
+            switch (person)
             {
-                case Enums.PersonType.PersoanaCuPermis: return new PersoanaCuPermisacio(Factory.CreateACarnet());
-                case Enums.PersonType.SimplePerson: return new SimplePerson();
-                case Enums.PersonType.Politianu: return new Politianu();
-                case Enums.PersonType.PersoanaAutorizata: return new PersoanaAutorizata();
+                case PersonType.CarDriver: return new CarDriverPerson();
+                case PersonType.Simple: return new SimplePerson();
 
                 default: return new SimplePerson();
             }
         }
 
-        public static Carnet CreateACarnet()
+        public static IAuthorizedPerson CreateAnAuthorizedPerson(PersonType person)
         {
-            return new Carnet();
+            switch (person)
+            {
+                case PersonType.CarDriver: return new LicenseCreator();
+                //future types of authorizedPerson maybe ServiceRepair?
+                default: return new LicenseCreator();
+            }
         }
 
-        public static Vehicle CreateAVehicle(Enums.ModeleVehicule vehicul)
+        public static IPoliceman CreateAPoliceman(PersonType person)
+        {
+            switch (person)
+            {
+                case PersonType.Policeman: return new CarLicenseVerificationPolice();
+                //future types of IPoliceman maybe IDVerificationPolice ?
+                default: return new CarLicenseVerificationPolice();
+            }
+        }
+
+        public static License CreateBruteLicense()
+        {
+            return new License();
+        }
+
+        public static Vehicle CreateAVehicle(VehicleTypes vehicul)
         {
             switch (vehicul)
             {
-                case Enums.ModeleVehicule.SotoCaruta: return new Vehicle(Enums.ModeleVehicule.SotoCaruta) { CategoriePermisNecesara = Enums.CategoriePermis.Caruta };
+                case VehicleTypes.SotoCaruta:
+                    return new Vehicle(VehicleTypes.SotoCaruta)
+                    { _NeccessaryCategory = LicenseCategory.Caruta };
 
-                case Enums.ModeleVehicule.Audi: return new Vehicle(Enums.ModeleVehicule.Audi) { CategoriePermisNecesara = Enums.CategoriePermis.Masina };
+                case VehicleTypes.Audi:
+                    return new Vehicle(VehicleTypes.Audi)
+                    { _NeccessaryCategory = LicenseCategory.Masina };
 
-                case Enums.ModeleVehicule.Toyota: return new Vehicle(Enums.ModeleVehicule.Toyota) { CategoriePermisNecesara = Enums.CategoriePermis.Masina };
+                case VehicleTypes.Toyota:
+                    return new Vehicle(VehicleTypes.Toyota)
+                    { _NeccessaryCategory = LicenseCategory.Masina };
 
-                case Enums.ModeleVehicule.TIRVolvo: return new Vehicle(Enums.ModeleVehicule.TIRVolvo) { CategoriePermisNecesara = Enums.CategoriePermis.TIR };
+                case VehicleTypes.TIRVolvo:
+                    return new Vehicle(VehicleTypes.TIRVolvo)
+                    { _NeccessaryCategory = LicenseCategory.TIR };
 
-                default: return new Vehicle(Enums.ModeleVehicule.SotoCaruta) { CategoriePermisNecesara = Enums.CategoriePermis.Caruta };
+                default:
+                    return new Vehicle(VehicleTypes.SotoCaruta)
+                    { _NeccessaryCategory = LicenseCategory.Caruta };
             }
         }
     }

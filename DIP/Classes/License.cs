@@ -4,16 +4,26 @@ using System.Text;
 
 namespace DIP{
     public class License {
-        public SortedSet<Enums.CategoriePermis> categoriiDetinute;
-        public Carnet() { // varargs of enum value in constructor -- cannot have carnet with no categories
-            CategoriiDetinute = new SortedSet<Enums.CategoriePermis>();
+        private SortedSet<LicenseCategory> ownedCategories;
+
+        public SortedSet<LicenseCategory> OwnedCategories
+        {
+            get => ownedCategories;
+            set => ownedCategories = value;
+        }
+
+        public License()
+        { // varargs of enum value in constructor -- cannot have carnet with no categories
+           
         }
     }
 
-    public enum CategoriePermis // repetition
+    public enum LicenseCategory // repetition
     {
         Masina,
         Caruta,
         TIR
     }
+
+
 }

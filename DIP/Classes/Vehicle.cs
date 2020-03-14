@@ -6,28 +6,39 @@ namespace DIP.Classes
 {
     public class Vehicle
     {
-        private Enums.ModeleVehicule vehicul;
-        private Enums.CategoriePermis categoriePermisNecesara;
+        private VehicleTypes _vehicleType;
+        private LicenseCategory _neccessaryCategory;
+        private string _vehicleInUse;
 
-        public Enums.ModeleVehicule Vehicul
+        public VehicleTypes VehicleType
         {
-            get => vehicul;
-            set => vehicul = value;
+            set => _vehicleType = value;
         }
 
-        public Enums.CategoriePermis CategoriePermisNecesara
+        public string VehicleInUse
         {
-            get => categoriePermisNecesara;
-            set => categoriePermisNecesara = value;
+            get => GetVehicleType();
         }
 
-        public Vehicle(Enums.ModeleVehicule vehicul)
+        public LicenseCategory _NeccessaryCategory
         {
-            this.vehicul = Vehicul;
+            get => _neccessaryCategory;
+            set => _neccessaryCategory = value;
         }
 
+
+        public string GetVehicleType()
+        {
+            return Enum.GetName(typeof(VehicleTypes), _vehicleType);
+        }
+
+        public Vehicle(VehicleTypes vehicleType)
+        {
+            this._vehicleType = vehicleType;
+        }
     }
-    public enum ModeleVehicule // repetition
+
+    public enum VehicleTypes // repetition
     {
         Toyota,
         Audi,

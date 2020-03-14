@@ -7,14 +7,18 @@ namespace DIP.Interfaces {
     public interface IPerson {
         public string Name { get; set; }
         public int Age { get; set; }
-        public Carnet Carnet { get; set; }
+        public License License { get; set; }
+        public List<Vehicle> ? Vehicles { get; set; }
+        public Vehicle ? Vehicle { get; set; }
+        void Drive(Vehicle vehicle);
+        void BuyVehicle(Vehicle vehicle);
     }
 
-    public enum PersonType // Not necessarily needed
+    public enum PersonType 
     {
-        SimplePerson,
-        PersoanaCuPermis,
-        Politianu,
-        PersoanaAutorizata
+        Simple,
+        CarDriver,
+        Policeman,
+        LicenseCreator
     }
 }

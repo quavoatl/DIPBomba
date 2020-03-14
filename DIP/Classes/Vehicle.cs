@@ -6,17 +6,25 @@ namespace DIP.Classes
 {
     public class Vehicle
     {
-        private Enums.VehiculDetinut vehicul;
+        private Enums.ModeleVehicule vehicul;
+        private Enums.CategoriePermis categoriePermisNecesara;
 
-        public Enums.VehiculDetinut Vehicul
+        public Enums.ModeleVehicule Vehicul
         {
             get => vehicul;
             set => vehicul = value;
         }
 
-        public Vehicle(Enums.VehiculDetinut vehicul)
+        public Enums.CategoriePermis CategoriePermisNecesara
+        {
+            get => categoriePermisNecesara;
+            set => categoriePermisNecesara = value;
+        }
+
+        public Vehicle(Enums.ModeleVehicule vehicul)
         {
             this.vehicul = Vehicul;
         }
+
     }
 }

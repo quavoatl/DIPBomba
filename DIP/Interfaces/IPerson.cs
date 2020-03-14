@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DIP.Classes;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,5 +10,6 @@ namespace DIP.Interfaces
         public string Name { get; set; }
 
         public int Age { get; set; }
+        void CumparaVehicul(Vehicle vehicle);
     }
 }

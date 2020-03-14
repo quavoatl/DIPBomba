@@ -9,15 +9,17 @@ namespace DIP
         public enum CategoriePermis // repetition
         {
            Masina,
-           Tractor,
+           Caruta,
            TIR
         }
 
-        public enum VehiculDetinut // repetition
+        public enum ModeleVehicule // repetition
         {
-            Masina,
-            Tractor,
-            TIR
+            Toyota,
+            Audi,
+            TIRVolvo,
+            TIRScania,
+            SotoCaruta
         }
         
         public enum PersonType // Not necessarily needed

@@ -5,24 +5,19 @@ using DIP.Interfaces;
 
 namespace DIP.Classes
 {
-    class PersoanaCuPermisacio : IPerson
+    class PersoanaCuPermisacio : IDrivePerson
     {
-        private Vehicle vehicle;
-        private Carnet _carnet;
+        private Vehicle _vehiculCurent;
+        private Carnet _carnetel;
         private string name;
         private int age;
 
-        public Vehicle Vehicle
-        {
-            get => vehicle;
-            set => vehicle = value;
-        }
+       
+        public Carnet _Carnet { get => _carnetel; set => _carnetel = value; }
+        public Vehicle VehiculCurent { get => _vehiculCurent; set => _vehiculCurent = value; }
+        public SortedSet<Vehicle> VehiculeDetinute { get; set; }
 
-        public Carnet Carnet
-        {
-            get => _carnet;
-            set => _carnet = value;
-        }
+
 
         public string Name
         {
@@ -38,21 +33,32 @@ namespace DIP.Classes
 
         public PersoanaCuPermisacio(Vehicle vehicle, Carnet carnet, string name, int age)
         {
-            this.vehicle = vehicle;
-            _carnet = carnet;
+            this._vehiculCurent = vehicle;
+            _Carnet = carnet;
             this.name = name;
             this.age = age;
         }
 
         public PersoanaCuPermisacio(Carnet carnet)
         {
-            this._carnet = carnet;
+            this._Carnet = carnet;
         }
 
-        public void CumparaVehicul(Enums.VehiculDetinut vehicul)
+        public void CumparaVehicul(Vehicle vehicle)
         {
-            this.vehicle = Factory.CreateAVehicle(vehicul);
+            if(VehiculeDetinute == null)
+            {
+                this.VehiculeDetinute = new SortedSet<Vehicle>();
+            }
+            this.VehiculeDetinute.Add(vehicle);
         }
 
+        public void Drive(Vehicle vehicle)
+        {
+            if (VehiculeDetinute.Contains(vehicle))
+            {
+                _vehiculCurent = vehicle;
+            }
+        }
     }
 }

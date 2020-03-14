@@ -5,20 +5,33 @@ using DIP.Interfaces;
 
 namespace DIP.Classes
 {
-    class Politianu : IPerson
+    class Politianu : IPolitianu
     {
         public string Name { get; set; }
         public int Age { get; set; }
 
-        public bool VerificaPulaiDePermis(PersoanaCuPermisacio person)
+        public Politianu()
         {
-            foreach (Enums.CategoriePermis categ in Enum.GetValues(typeof(Enums.CategoriePermis)))
-            {
-                if (person.Carnet.CategoriiDetinute.Contains(categ)) return true;
-            }
-
-            return false;
+            
         }
+
+        public void CumparaVehicul(Vehicle vehicle)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void VerificaPulaiDePermis(IDrivePerson person)
+        {
+            if (person._Carnet.CategoriiDetinute.Contains(person.VehiculCurent.CategoriePermisNecesara))
+            {
+                Console.WriteLine("Coaie conduci bine no stress");
+            }
+            else
+            {
+                Console.WriteLine("Bafta coaie dosar penal");
+            }
+        }
+
     }
 
 }

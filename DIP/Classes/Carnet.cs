@@ -14,5 +14,9 @@ namespace DIP
             set => categoriiDetinute = value;
         }
 
+        public Carnet()
+        {
+            CategoriiDetinute = new SortedSet<Enums.CategoriePermis>();
+        }
     }
 }

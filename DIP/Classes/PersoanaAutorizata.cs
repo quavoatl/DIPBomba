@@ -5,15 +5,20 @@ using DIP.Interfaces;
 
 namespace DIP.Classes
 {
-    class PersoanaAutorizata : IPerson
+    class PersoanaAutorizata : IAuthorizedPerson
     {
         public string Name { get; set; }
         public int Age { get; set; }
 
-        public void BagaCategorieInPermis(PersoanaCuPermisacio persoanaCuPermisacio,
+        public void BagaCategorieInPermis(IDrivePerson persoanaCuPermisacio,
             Enums.CategoriePermis categ)
         {
-            persoanaCuPermisacio.Carnet.CategoriiDetinute.Add(categ);
+            persoanaCuPermisacio._Carnet.CategoriiDetinute.Add(categ);
+        }
+
+        public void CumparaVehicul(Vehicle vehicle)
+        {
+            throw new NotImplementedException();
         }
     }
 }

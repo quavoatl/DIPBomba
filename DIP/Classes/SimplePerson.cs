@@ -9,5 +9,10 @@ namespace DIP.Classes
     {
         public string Name { get; set; }
         public int Age { get; set; }
+
+        public void CumparaVehicul(Vehicle vehicle)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

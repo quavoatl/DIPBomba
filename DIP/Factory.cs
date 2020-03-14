@@ -10,14 +10,15 @@ namespace DIP
     {
         public static IPerson CreateAPerson(Enums.PersonType persoana)
         {
-            switch (persoana)
+            // don't write switch cases without default cases
+            switch (persoana) 
             {
                 case Enums.PersonType.PersoanaCuPermis: return new PersoanaCuPermisacio(Factory.CreateACarnet());
                 case Enums.PersonType.SimplePerson: return new SimplePerson();
                 case Enums.PersonType.Politianu: return new Politianu();
                 case Enums.PersonType.PersoanaAutorizata: return new PersoanaAutorizata();
             }
-            return null;
+            return null; // never return null
         }
 
         public static Vehicle CreateAVehicle(Enums.VehiculDetinut vehicul)

@@ -27,4 +27,12 @@ namespace DIP.Classes
         }
 
     }
+    public enum ModeleVehicule // repetition
+    {
+        Toyota,
+        Audi,
+        TIRVolvo,
+        TIRScania,
+        SotoCaruta
+    }
 }

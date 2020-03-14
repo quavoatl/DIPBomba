@@ -8,10 +8,11 @@ namespace DIP
     {
         static void Main(string[] args)
         {
-            IDrivePerson persoanaCuPermisacio = (IDrivePerson)Factory.CreateAPerson(Enums.PersonType.PersoanaCuPermis); // invert the dependency : bun asa sau ? 
-            IAuthorizedPerson persoanaAutorizata = (IAuthorizedPerson)Factory.CreateAPerson(Enums.PersonType.PersoanaAutorizata);      // invert the dependency : bun asa sau ? 
-
-
+            IPerson persoanaCuPermisacio = Factory.CreateAPerson(Enums.PersonType.PersoanaCuPermis);
+            IPerson persoanaAutorizata = Factory.CreateAPerson(Enums.PersonType.PersoanaAutorizata); // Even if the type of persoanaAutorizata is declared as IPerson, its actual type is of the subclass
+            // The idea of dependency inversion is to rely on the abstraction instead of an implementation, and that's only partially correct here. 
+            // Don't actually cast the variable into a different type, leave the type as abstract as possible for your functionality to still work correctly;
+            
             persoanaAutorizata.BagaCategorieInPermis(persoanaCuPermisacio, Enums.CategoriePermis.Masina);
 
             Vehicle TiranuVolvanu = Factory.CreateAVehicle(Enums.ModeleVehicule.TIRVolvo);

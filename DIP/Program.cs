@@ -17,7 +17,7 @@ namespace DIP
             // Don't actually cast the variable into a different type, leave the type as abstract as possible for your functionality to still work correctly;
 
            // persoanaAutorizata.CreateALicense(persoanaCuPermisacio,LicenseCategory.Masina);
-
+             
             Vehicle vehicle = Factory.CreateAVehicle(VehicleTypes.Audi);
             persoanaCuPermisacio.BuyVehicle(vehicle); // people can buy vehicles without owning the proper license : V
                                                                 // people can buy more than one vehicle : V

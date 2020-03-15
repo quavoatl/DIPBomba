@@ -8,18 +8,13 @@ namespace ObserverPattern
     {
         static void Main(string[] args)
         {
-            IParkCarDetails centralParkCarDetails = new CentralParkingDetails();
+            IParkCarDetails centralParkCarDetails = new CentralParkingDetails(10,6.70);
             ISubject centralParkSubject = new CentralParkingSubject(centralParkCarDetails);
-            IPayParking ccPayment = new CrediCardPayCarParking(centralParkCarDetails);
-            CJ_10_SRG CJ_10_SRG = new CJ_10_SRG(centralParkSubject, ccPayment);
-
-            centralParkCarDetails.TicketPrice = 5.50;
-            centralParkCarDetails.Capacity = 70;
+            ICarObserver CJ_10_PLM = new CJ_10_PLM(centralParkSubject, 
+                                        new CrediCardPayment(centralParkCarDetails));
 
             centralParkSubject.NotifyUsers();
-            CJ_10_SRG.WantsTicket = true;
-            centralParkSubject.NotifyUsers();
-            Console.WriteLine($"{centralParkCarDetails.Capacity}");
+            CJ_10_PLM.BuyTicket();
             centralParkSubject.NotifyUsers();
         }
     }

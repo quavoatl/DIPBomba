@@ -6,7 +6,6 @@ namespace ObserverPattern.Interfaces
 {
     public interface IPayParking
     {
-        IParkCarDetails ParkCarDetails { get; set; }
-        void UpdatePark(IParkCarDetails carDetails);
+        void ProcessPayment();
     }
 }

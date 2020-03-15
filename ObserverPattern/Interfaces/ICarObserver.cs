@@ -6,6 +6,7 @@ namespace ObserverPattern.Interfaces
 {
    public interface ICarObserver
    {
-       void Update(IParkCarDetails parkCarDetails);
+       void BuyTicket();
+       void Update(AbsDataForCarObserver data);
    }
 }

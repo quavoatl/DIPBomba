@@ -6,41 +6,36 @@ using ObserverPattern.Interfaces;
 
 namespace ObserverPattern.ConcreteClasses
 {
-    public class CJ_10_SRG : ICarObserver,IBuyTicket
+    public class CJ_10_PLM : ICarObserver
     {
         private ISubject _carSubject;
         private IPayParking _prefferedParkingPayment;
         private int _capacity;
         private double _ticketPrice;
-        private bool wantsTicket = false;
-
-        public bool WantsTicket
-        {
-            get => wantsTicket;
-            set => wantsTicket = value;
-        }
-
-        public void Update(IParkCarDetails parkCarDetails)
+      
+        public void Update(AbsDataForCarObserver parkCarDetails)
         {
             this._capacity = parkCarDetails.Capacity;
             this._ticketPrice = parkCarDetails.TicketPrice;
-            if (wantsTicket && _capacity > 0)
-            {
-                BuyTicket(_prefferedParkingPayment);
-                wantsTicket = false;
-            }
         }
 
-        public CJ_10_SRG(ISubject carSubject, IPayParking payParking)
+        public CJ_10_PLM(ISubject carSubject, IPayParking payParking)
         {
             _carSubject = carSubject;
             _prefferedParkingPayment = payParking;
             _carSubject.AddCarUser(this);
         }
 
-        public void BuyTicket(IPayParking payParking)
+        public void BuyTicket()
         {
-            payParking.UpdatePark(payParking.ParkCarDetails);
+            if (_capacity > 0)
+            {
+                _prefferedParkingPayment.ProcessPayment();
+            }
+            else
+            {
+                Console.WriteLine($"No spots in the parking lot atm");
+            }
         }
     }
 }

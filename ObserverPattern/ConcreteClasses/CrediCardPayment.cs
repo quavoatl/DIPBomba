@@ -5,7 +5,7 @@ using ObserverPattern.Interfaces;
 
 namespace ObserverPattern.ConcreteClasses
 {
-    public class CrediCardPayCarParking : IPayParking
+    public class CrediCardPayment : IPayParking
     {
         private IParkCarDetails _parkCarDetails;
         public IParkCarDetails ParkCarDetails
@@ -14,12 +14,12 @@ namespace ObserverPattern.ConcreteClasses
             set => _parkCarDetails = value;
         }
 
-        public CrediCardPayCarParking(IParkCarDetails parkCarDetails)
+        public CrediCardPayment(IParkCarDetails parkCarDetails)
         {
             _parkCarDetails = parkCarDetails;
         }
 
-        public void UpdatePark(IParkCarDetails carDetails)
+        public void ProcessPayment()
         {
             _parkCarDetails.Capacity -= 1;
             Console.WriteLine($"You bought a ticket via CC, paid : {_parkCarDetails.TicketPrice}");

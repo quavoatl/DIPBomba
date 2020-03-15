@@ -7,6 +7,7 @@ namespace ObserverPattern.ConcreteClasses
 {
     public class CentralParkingSubject : ISubject
     {
+        private AbsDataForCarObserver _dataForCarObserver;
         private IParkCarDetails _parkCarDetails;
         private List<ICarObserver> _observers;
         private int _capacity = 0;
@@ -22,6 +23,12 @@ namespace ObserverPattern.ConcreteClasses
         {
             get => _ticketPrice;
             set => _ticketPrice = value;
+        }
+
+        public List<ICarObserver> Observers
+        {
+            get => _observers;
+            set => _observers = value;
         }
 
         public CentralParkingSubject(IParkCarDetails parkCarDetails)
@@ -40,29 +47,27 @@ namespace ObserverPattern.ConcreteClasses
             _observers.Remove(carObserver);
         }
 
-        public List<ICarObserver> Observers
+        public void NotifyUsers()
         {
-            get => _observers;
-            set => _observers = value;
+            GetParkDetails();
+            foreach (var carObserver in _observers)
+            {
+                carObserver.Update(_dataForCarObserver);
+            }
         }
 
         private void GetParkDetails()
         {
             _capacity = _parkCarDetails.Capacity;
             _ticketPrice = _parkCarDetails.TicketPrice;
+            BuildDataForCarObserver();
             Console.WriteLine($"At this moment we have {_capacity} parking slots\n" +
                               $"    - Price for one ticket {_ticketPrice}");
         }
 
-        public void NotifyUsers()
+        private void BuildDataForCarObserver()
         {
-            GetParkDetails();
-            foreach (var carObserver in _observers)
-            {
-                carObserver.Update(_parkCarDetails);
-            }
+            _dataForCarObserver = new DataForCarObserver(_capacity,_ticketPrice);
         }
-                
-
     }
 }

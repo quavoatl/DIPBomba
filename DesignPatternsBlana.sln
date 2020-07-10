@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyPattern", "ProxyPatter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsability", "ChainOfResponsability\ChainOfResponsability.csproj", "{2C3F820C-0A78-4711-9194-657F491F25B4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC", "MVC\MVC.csproj", "{1C69013A-31D2-4112-9D0E-AF3777FF7730}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,10 +79,10 @@ Global
 		{EDC10F45-702D-4C48-AC26-9516023FEB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDC10F45-702D-4C48-AC26-9516023FEB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDC10F45-702D-4C48-AC26-9516023FEB99}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C3F820C-0A78-4711-9194-657F491F25B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C3F820C-0A78-4711-9194-657F491F25B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C3F820C-0A78-4711-9194-657F491F25B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C3F820C-0A78-4711-9194-657F491F25B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C69013A-31D2-4112-9D0E-AF3777FF7730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C69013A-31D2-4112-9D0E-AF3777FF7730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C69013A-31D2-4112-9D0E-AF3777FF7730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C69013A-31D2-4112-9D0E-AF3777FF7730}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

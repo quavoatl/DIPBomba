@@ -16,7 +16,7 @@ namespace ChainOfResponsability
             AbstractServiceHandler carEngineTuneHandler = new CarEngineTuneHandler(carEngineTuneService);
             AbstractServiceHandler carWasherHandler = new CarWasherHandler(carWashService);
 
-            AbstractCar toyota = new Toyota("Toyota Avensis 2.2D", new List<AbstractService>(new AbstractService[] { carWashService,carTyresService}));
+            AbstractCar toyota = new Toyota("Toyota Avensis 2.2D", new List<AbstractService>(new AbstractService[] { carWashService, carTyresService, carEngineTuneService }));
 
             List<AbstractServiceHandler> listOfServiceHandlers =
                 new List<AbstractServiceHandler>(new AbstractServiceHandler[] { carTyresHandler, carEngineTuneHandler, carWasherHandler });

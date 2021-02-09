@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandPattern", "CommandPattern\CommandPattern.csproj", "{FABB72D6-1DAF-436A-BF4D-9898576468C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{34BC5CF5-5474-4E51-9994-FAE9ADBAA687}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iterator", "Iterator\Iterator.csproj", "{34BC5CF5-5474-4E51-9994-FAE9ADBAA687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{74D09C4D-AF0C-41C9-8812-F661FA3AA71F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{34BC5CF5-5474-4E51-9994-FAE9ADBAA687}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34BC5CF5-5474-4E51-9994-FAE9ADBAA687}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34BC5CF5-5474-4E51-9994-FAE9ADBAA687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D09C4D-AF0C-41C9-8812-F661FA3AA71F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D09C4D-AF0C-41C9-8812-F661FA3AA71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D09C4D-AF0C-41C9-8812-F661FA3AA71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D09C4D-AF0C-41C9-8812-F661FA3AA71F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,13 +6,13 @@ namespace ProxyPattern
 {
     public class DatabaseManager : IDatabaseManager
     {
-        public IDatabaseManager DatabaseManagerProxy { get; set ; }
+        public IDatabaseManager DatabaseManagerProxy { get; set; }
         public User CurrentUser { get; set; }
-        public DatabaseManager(User user,IDatabaseManager databaseManagerProxy = null)
+        public DatabaseManager(User user, IDatabaseManager databaseManagerProxy = null)
         {
             this.CurrentUser = user;
             this.DatabaseManagerProxy = databaseManagerProxy;
-            if(databaseManagerProxy != null) this.DatabaseManagerProxy.CurrentUser = this.CurrentUser;
+            if (databaseManagerProxy != null) this.DatabaseManagerProxy.CurrentUser = this.CurrentUser;
         }
 
         public void ExecuteSomeQuery(string query)
@@ -27,9 +27,9 @@ namespace ProxyPattern
                 {
                     DatabaseManagerProxy.ExecuteSomeQuery(query);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
-                    Console.WriteLine("Da-mi un proxy ca te fut in bot");
+                    Console.WriteLine("Da-mi un proxy");
                 }
             }
         }

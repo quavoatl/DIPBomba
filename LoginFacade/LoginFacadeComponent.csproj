@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unity.NetCore" Version="4.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AuthenticationService\AuthenticationServiceComponent.csproj" />
+    <ProjectReference Include="..\AuthorizationService\AuthorizationServiceComponent.csproj" />
+    <ProjectReference Include="..\ValidationService\ValidationServiceComponent.csproj" />
+  </ItemGroup>
+
+</Project>

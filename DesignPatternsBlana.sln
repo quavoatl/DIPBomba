@@ -39,27 +39,41 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator2", "Decorator2\De
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facade", "Facade", "{CA198523-7D5B-4C72-8518-885CCA0CE4C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientDriver", "ClientCode\ClientDriver.csproj", "{BA1B2EF2-54D5-447A-8246-0900409B0A8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientDriver", "ClientCode\ClientDriver.csproj", "{BA1B2EF2-54D5-447A-8246-0900409B0A8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationServiceComponent", "ValidationService\ValidationServiceComponent.csproj", "{4E2E2B79-663C-4BB5-BB19-2544EBDABC4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationServiceComponent", "ValidationService\ValidationServiceComponent.csproj", "{4E2E2B79-663C-4BB5-BB19-2544EBDABC4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationServiceComponent", "AuthenticationService\AuthenticationServiceComponent.csproj", "{604AE8BE-35D0-4AAD-B9ED-A6F9DA4E2D2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationServiceComponent", "AuthenticationService\AuthenticationServiceComponent.csproj", "{604AE8BE-35D0-4AAD-B9ED-A6F9DA4E2D2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizationServiceComponent", "AuthorizationService\AuthorizationServiceComponent.csproj", "{747E5AA6-455B-4C02-89AC-43C4B338E95F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizationServiceComponent", "AuthorizationService\AuthorizationServiceComponent.csproj", "{747E5AA6-455B-4C02-89AC-43C4B338E95F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginFacadeComponent", "LoginFacade\LoginFacadeComponent.csproj", "{38EB8DA1-DEB9-42A2-BA68-7DD6C73B9431}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginFacadeComponent", "LoginFacade\LoginFacadeComponent.csproj", "{38EB8DA1-DEB9-42A2-BA68-7DD6C73B9431}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{A820E41A-E1C6-4592-8A8D-6782D565AD13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientAdapterDriver", "ClientAdapterDriver\ClientAdapterDriver.csproj", "{AC8E7A2A-2796-4C57-BB25-0C23D1CB9190}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientAdapterDriver", "ClientAdapterDriver\ClientAdapterDriver.csproj", "{AC8E7A2A-2796-4C57-BB25-0C23D1CB9190}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Observer2", "Observer2", "{34751D8E-D1BA-489B-84E2-21C284A284C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverDriver", "ObserverDriver\ObserverDriver.csproj", "{E2569D16-B1EB-420A-89F5-5C24DDBAA6EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverDriver", "ObserverDriver\ObserverDriver.csproj", "{E2569D16-B1EB-420A-89F5-5C24DDBAA6EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverComponent", "ObserverComponent\ObserverComponent.csproj", "{E9BEBB0E-59C1-4DA6-AD9E-C45F00782313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverComponent", "ObserverComponent\ObserverComponent.csproj", "{E9BEBB0E-59C1-4DA6-AD9E-C45F00782313}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubjectComponent", "ISubjectComponent\SubjectComponent.csproj", "{5E85161C-FD14-461B-A466-2B92EE9A5D69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubjectComponent", "ISubjectComponent\SubjectComponent.csproj", "{5E85161C-FD14-461B-A466-2B92EE9A5D69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command2", "Command2", "{CDABE8C9-8F3D-4EFF-8417-C723F2639116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandDriver", "CommandDriver\CommandDriver.csproj", "{3BE66746-9FDF-41E7-BAEC-F1530710C483}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStorage", "DataStorage\DataStorage.csproj", "{DB2F26F5-C808-4C3C-87D4-B066504098F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookModel", "BookModel\BookModel.csproj", "{EDB997BD-AE3C-47D5-812A-60EBF4BA74C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopComponent", "ShopComponent\ShopComponent.csproj", "{E0CE3C50-9070-4F48-B44A-46A686754A4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandsComponent", "CommandsComponent\CommandsComponent.csproj", "{FE02E925-99B0-4AD5-8E3C-63C1B85DB132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartComponentBackup", "CartComponentBackup\CartComponentBackup.csproj", "{CF333A13-9D87-4F3A-A623-B6E49752ED5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +185,30 @@ Global
 		{5E85161C-FD14-461B-A466-2B92EE9A5D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E85161C-FD14-461B-A466-2B92EE9A5D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E85161C-FD14-461B-A466-2B92EE9A5D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE66746-9FDF-41E7-BAEC-F1530710C483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE66746-9FDF-41E7-BAEC-F1530710C483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE66746-9FDF-41E7-BAEC-F1530710C483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE66746-9FDF-41E7-BAEC-F1530710C483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB2F26F5-C808-4C3C-87D4-B066504098F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB2F26F5-C808-4C3C-87D4-B066504098F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB2F26F5-C808-4C3C-87D4-B066504098F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB2F26F5-C808-4C3C-87D4-B066504098F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB997BD-AE3C-47D5-812A-60EBF4BA74C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB997BD-AE3C-47D5-812A-60EBF4BA74C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB997BD-AE3C-47D5-812A-60EBF4BA74C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB997BD-AE3C-47D5-812A-60EBF4BA74C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0CE3C50-9070-4F48-B44A-46A686754A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CE3C50-9070-4F48-B44A-46A686754A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CE3C50-9070-4F48-B44A-46A686754A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CE3C50-9070-4F48-B44A-46A686754A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE02E925-99B0-4AD5-8E3C-63C1B85DB132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE02E925-99B0-4AD5-8E3C-63C1B85DB132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE02E925-99B0-4AD5-8E3C-63C1B85DB132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE02E925-99B0-4AD5-8E3C-63C1B85DB132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF333A13-9D87-4F3A-A623-B6E49752ED5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF333A13-9D87-4F3A-A623-B6E49752ED5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF333A13-9D87-4F3A-A623-B6E49752ED5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF333A13-9D87-4F3A-A623-B6E49752ED5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -185,6 +223,12 @@ Global
 		{E2569D16-B1EB-420A-89F5-5C24DDBAA6EF} = {34751D8E-D1BA-489B-84E2-21C284A284C1}
 		{E9BEBB0E-59C1-4DA6-AD9E-C45F00782313} = {34751D8E-D1BA-489B-84E2-21C284A284C1}
 		{5E85161C-FD14-461B-A466-2B92EE9A5D69} = {34751D8E-D1BA-489B-84E2-21C284A284C1}
+		{3BE66746-9FDF-41E7-BAEC-F1530710C483} = {CDABE8C9-8F3D-4EFF-8417-C723F2639116}
+		{DB2F26F5-C808-4C3C-87D4-B066504098F2} = {CDABE8C9-8F3D-4EFF-8417-C723F2639116}
+		{EDB997BD-AE3C-47D5-812A-60EBF4BA74C9} = {CDABE8C9-8F3D-4EFF-8417-C723F2639116}
+		{E0CE3C50-9070-4F48-B44A-46A686754A4C} = {CDABE8C9-8F3D-4EFF-8417-C723F2639116}
+		{FE02E925-99B0-4AD5-8E3C-63C1B85DB132} = {CDABE8C9-8F3D-4EFF-8417-C723F2639116}
+		{CF333A13-9D87-4F3A-A623-B6E49752ED5E} = {CDABE8C9-8F3D-4EFF-8417-C723F2639116}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7074A3B-DE49-4ABE-AACF-75F7EDD6E520}

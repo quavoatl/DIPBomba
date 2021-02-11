@@ -17,5 +17,10 @@ namespace CommandPattern
         {
             _tv.TurnOn();
         }
+
+        public void Undo()
+        {
+            _tv.TurnOf();
+        }
     }
 }

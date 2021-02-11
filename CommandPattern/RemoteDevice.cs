@@ -4,18 +4,26 @@ using System.Text;
 
 namespace CommandPattern
 {
-    public class RemoteDevice
+    public class RemoteDevice : ICommandManager
     {
-        private ICommand _command;
+        private Stack<ICommand> _commands = new Stack<ICommand>();
+        private ICommand _currentCommand;
 
-        public RemoteDevice(ICommand command)
+        public RemoteDevice()
         {
-            this._command = command;
         }
 
-        public void PressButton()
+        public void ExecuteCommand(ICommand command)
         {
-            _command.Execute();
+            _currentCommand = command;
+            _commands.Push(_currentCommand);
+            _currentCommand.Execute();
+        }
+
+        public void UndoLastCommand()
+        {
+            _currentCommand.Undo();
+            _commands.Pop();
         }
     }
 }

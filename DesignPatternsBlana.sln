@@ -63,25 +63,33 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubjectComponent", "ISubjec
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command2", "Command2", "{CDABE8C9-8F3D-4EFF-8417-C723F2639116}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandDriver", "CommandDriver\CommandDriver.csproj", "{3BE66746-9FDF-41E7-BAEC-F1530710C483}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandDriver", "CommandDriver\CommandDriver.csproj", "{3BE66746-9FDF-41E7-BAEC-F1530710C483}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStorage", "DataStorage\DataStorage.csproj", "{DB2F26F5-C808-4C3C-87D4-B066504098F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStorage", "DataStorage\DataStorage.csproj", "{DB2F26F5-C808-4C3C-87D4-B066504098F2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookModel", "BookModel\BookModel.csproj", "{EDB997BD-AE3C-47D5-812A-60EBF4BA74C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopComponent", "ShopComponent\ShopComponent.csproj", "{E0CE3C50-9070-4F48-B44A-46A686754A4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopComponent", "ShopComponent\ShopComponent.csproj", "{E0CE3C50-9070-4F48-B44A-46A686754A4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandsComponent", "CommandsComponent\CommandsComponent.csproj", "{FE02E925-99B0-4AD5-8E3C-63C1B85DB132}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandsComponent", "CommandsComponent\CommandsComponent.csproj", "{FE02E925-99B0-4AD5-8E3C-63C1B85DB132}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartComponentBackup", "CartComponentBackup\CartComponentBackup.csproj", "{CF333A13-9D87-4F3A-A623-B6E49752ED5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartComponentBackup", "CartComponentBackup\CartComponentBackup.csproj", "{CF333A13-9D87-4F3A-A623-B6E49752ED5E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{0E65A3F7-D92E-45CB-B764-09E80DECD15B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintComponent", "PrintComponent\PrintComponent.csproj", "{4A51E02C-2B3D-448B-BD73-0990CC2D6E3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintComponent", "PrintComponent\PrintComponent.csproj", "{4A51E02C-2B3D-448B-BD73-0990CC2D6E3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintMedicalDocumentClient", "PrintMedicalDocument\PrintMedicalDocumentClient.csproj", "{AE2152A1-600F-43AC-AC4C-4534FFE5E969}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintMedicalDocumentClient", "PrintMedicalDocument\PrintMedicalDocumentClient.csproj", "{AE2152A1-600F-43AC-AC4C-4534FFE5E969}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintOfficeDocumentClient", "PrintOfficeDocumentClient\PrintOfficeDocumentClient.csproj", "{383970E5-7190-42C7-8398-8319233F1BFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintOfficeDocumentClient", "PrintOfficeDocumentClient\PrintOfficeDocumentClient.csproj", "{383970E5-7190-42C7-8398-8319233F1BFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsability2", "ChainOfResponsability2", "{040B5399-6479-4298-9436-0FAC205CF1CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityEmailComponent", "UniversityEmailComponent\UniversityEmailComponent.csproj", "{F6F2A879-EDFE-48D3-8816-D7B17DDC4D5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityEmailProcessor", "UniversityEmailProcessor\UniversityEmailProcessor.csproj", "{16AFF635-4A5C-4B7C-A92C-D7BBAEA6DEAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServiceClient", "EmailServiceClient\EmailServiceClient.csproj", "{61383899-DB65-4448-92D8-19C8D95BC98B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -229,6 +237,18 @@ Global
 		{383970E5-7190-42C7-8398-8319233F1BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{383970E5-7190-42C7-8398-8319233F1BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{383970E5-7190-42C7-8398-8319233F1BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6F2A879-EDFE-48D3-8816-D7B17DDC4D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F2A879-EDFE-48D3-8816-D7B17DDC4D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F2A879-EDFE-48D3-8816-D7B17DDC4D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F2A879-EDFE-48D3-8816-D7B17DDC4D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16AFF635-4A5C-4B7C-A92C-D7BBAEA6DEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16AFF635-4A5C-4B7C-A92C-D7BBAEA6DEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16AFF635-4A5C-4B7C-A92C-D7BBAEA6DEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16AFF635-4A5C-4B7C-A92C-D7BBAEA6DEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61383899-DB65-4448-92D8-19C8D95BC98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61383899-DB65-4448-92D8-19C8D95BC98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61383899-DB65-4448-92D8-19C8D95BC98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61383899-DB65-4448-92D8-19C8D95BC98B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -252,6 +272,9 @@ Global
 		{4A51E02C-2B3D-448B-BD73-0990CC2D6E3B} = {0E65A3F7-D92E-45CB-B764-09E80DECD15B}
 		{AE2152A1-600F-43AC-AC4C-4534FFE5E969} = {0E65A3F7-D92E-45CB-B764-09E80DECD15B}
 		{383970E5-7190-42C7-8398-8319233F1BFB} = {0E65A3F7-D92E-45CB-B764-09E80DECD15B}
+		{F6F2A879-EDFE-48D3-8816-D7B17DDC4D5B} = {040B5399-6479-4298-9436-0FAC205CF1CD}
+		{16AFF635-4A5C-4B7C-A92C-D7BBAEA6DEAE} = {040B5399-6479-4298-9436-0FAC205CF1CD}
+		{61383899-DB65-4448-92D8-19C8D95BC98B} = {040B5399-6479-4298-9436-0FAC205CF1CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7074A3B-DE49-4ABE-AACF-75F7EDD6E520}

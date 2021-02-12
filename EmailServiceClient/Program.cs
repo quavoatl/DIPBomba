@@ -8,7 +8,7 @@ namespace EmailServiceClient
         static void Main(string[] args)
         {
             IEmailService emailService = new UniversityEmailService();
-            emailService.SendRequest("cacat");
+            emailService.SendRequest("asd");
 
         }
     }

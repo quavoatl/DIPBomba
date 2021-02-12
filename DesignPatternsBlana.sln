@@ -101,6 +101,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodModel", "FoodModel\Food
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodClient", "FoodClient\FoodClient.csproj", "{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mediator", "Mediator", "{F64DF147-CDD2-4899-A895-6DAF3C9CE9C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorDriver", "MediatorDriver\MediatorDriver.csproj", "{009CF327-32F7-47E2-86DD-BD7D06CD650E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -275,6 +279,10 @@ Global
 		{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{009CF327-32F7-47E2-86DD-BD7D06CD650E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009CF327-32F7-47E2-86DD-BD7D06CD650E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009CF327-32F7-47E2-86DD-BD7D06CD650E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009CF327-32F7-47E2-86DD-BD7D06CD650E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -305,6 +313,7 @@ Global
 		{961F8BED-C0CB-4C81-9D9B-1102B5007A74} = {5D9D3955-5715-4B28-AFFF-8E6FEC4BDFCB}
 		{B8CEC814-3AEB-4CA9-8D1A-5F732E46624F} = {5D9D3955-5715-4B28-AFFF-8E6FEC4BDFCB}
 		{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B} = {5D9D3955-5715-4B28-AFFF-8E6FEC4BDFCB}
+		{009CF327-32F7-47E2-86DD-BD7D06CD650E} = {F64DF147-CDD2-4899-A895-6DAF3C9CE9C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7074A3B-DE49-4ABE-AACF-75F7EDD6E520}

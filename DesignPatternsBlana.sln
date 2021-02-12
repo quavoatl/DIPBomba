@@ -85,11 +85,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintOfficeDocumentClient",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsability2", "ChainOfResponsability2", "{040B5399-6479-4298-9436-0FAC205CF1CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityEmailComponent", "UniversityEmailComponent\UniversityEmailComponent.csproj", "{F6F2A879-EDFE-48D3-8816-D7B17DDC4D5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityEmailComponent", "UniversityEmailComponent\UniversityEmailComponent.csproj", "{F6F2A879-EDFE-48D3-8816-D7B17DDC4D5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityEmailProcessor", "UniversityEmailProcessor\UniversityEmailProcessor.csproj", "{16AFF635-4A5C-4B7C-A92C-D7BBAEA6DEAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityEmailProcessor", "UniversityEmailProcessor\UniversityEmailProcessor.csproj", "{16AFF635-4A5C-4B7C-A92C-D7BBAEA6DEAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailServiceClient", "EmailServiceClient\EmailServiceClient.csproj", "{61383899-DB65-4448-92D8-19C8D95BC98B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailServiceClient", "EmailServiceClient\EmailServiceClient.csproj", "{61383899-DB65-4448-92D8-19C8D95BC98B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "State", "State", "{5D9D3955-5715-4B28-AFFF-8E6FEC4BDFCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSystemComponent", "FoodSystemComponenet\FoodSystemComponent.csproj", "{E6E3189E-CBF4-4F9E-9799-C1F853FCBEEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDataAccess", "FoodDataAccess\FoodDataAccess.csproj", "{961F8BED-C0CB-4C81-9D9B-1102B5007A74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodModel", "FoodModel\FoodModel.csproj", "{B8CEC814-3AEB-4CA9-8D1A-5F732E46624F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodClient", "FoodClient\FoodClient.csproj", "{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -249,6 +259,22 @@ Global
 		{61383899-DB65-4448-92D8-19C8D95BC98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61383899-DB65-4448-92D8-19C8D95BC98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61383899-DB65-4448-92D8-19C8D95BC98B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6E3189E-CBF4-4F9E-9799-C1F853FCBEEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E3189E-CBF4-4F9E-9799-C1F853FCBEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E3189E-CBF4-4F9E-9799-C1F853FCBEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E3189E-CBF4-4F9E-9799-C1F853FCBEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961F8BED-C0CB-4C81-9D9B-1102B5007A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961F8BED-C0CB-4C81-9D9B-1102B5007A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961F8BED-C0CB-4C81-9D9B-1102B5007A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961F8BED-C0CB-4C81-9D9B-1102B5007A74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CEC814-3AEB-4CA9-8D1A-5F732E46624F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CEC814-3AEB-4CA9-8D1A-5F732E46624F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CEC814-3AEB-4CA9-8D1A-5F732E46624F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CEC814-3AEB-4CA9-8D1A-5F732E46624F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -275,6 +301,10 @@ Global
 		{F6F2A879-EDFE-48D3-8816-D7B17DDC4D5B} = {040B5399-6479-4298-9436-0FAC205CF1CD}
 		{16AFF635-4A5C-4B7C-A92C-D7BBAEA6DEAE} = {040B5399-6479-4298-9436-0FAC205CF1CD}
 		{61383899-DB65-4448-92D8-19C8D95BC98B} = {040B5399-6479-4298-9436-0FAC205CF1CD}
+		{E6E3189E-CBF4-4F9E-9799-C1F853FCBEEF} = {5D9D3955-5715-4B28-AFFF-8E6FEC4BDFCB}
+		{961F8BED-C0CB-4C81-9D9B-1102B5007A74} = {5D9D3955-5715-4B28-AFFF-8E6FEC4BDFCB}
+		{B8CEC814-3AEB-4CA9-8D1A-5F732E46624F} = {5D9D3955-5715-4B28-AFFF-8E6FEC4BDFCB}
+		{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B} = {5D9D3955-5715-4B28-AFFF-8E6FEC4BDFCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7074A3B-DE49-4ABE-AACF-75F7EDD6E520}

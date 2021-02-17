@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DIP.Interfaces
 {
-    interface IAuthorizedPerson : IPerson
+    public interface IAuthorizedPerson : IPerson
     {
-        public void BagaCategorieInPermis(IDrivePerson persoanaCuPermisacio,
-            Enums.CategoriePermis categ);
+        void CreateALicense(IPerson person, LicenseCategory categ);
+        void AddCategoryToLicense(IPerson person, LicenseCategory categ);
     }
 }

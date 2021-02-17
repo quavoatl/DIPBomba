@@ -12,10 +12,7 @@ namespace Builder
 
         public void AddComponent(string component)
         {
-            if (components != null)
-            {
                 components.Add(component);
-            }
         }
 
         public void ListComponents()

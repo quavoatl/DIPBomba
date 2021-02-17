@@ -32,15 +32,7 @@ namespace CommandDriver
             ListRemainingBooksInShop(shop);
 
         }
-
-        static void ListDetailsOfShoppingCart(List<Book> listOfBooks)
-        {
-            foreach (var book in listOfBooks)
-            {
-                Console.WriteLine($"Book id: {book.Id} / Name: {book.Name} / Quantity: {book.Quantity}");
-            }
-        }
-
+        
         static void ListShoppingCartOfUser(ICart cart)
         {
             Console.Write($"User has: {cart.GetItemsInCart()} items in cart");

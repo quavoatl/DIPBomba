@@ -109,6 +109,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bridge", "Bridge", "{3AF40D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeImplementation", "BridgeImplementation\BridgeImplementation.csproj", "{86EF41AB-60EE-434A-80DD-3F1A9F1878EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototype2", "Prototype2", "{34D70CF9-FF09-473B-BA5F-2664488F6787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeV2", "PrototypeV2\PrototypeV2.csproj", "{43D7AC1D-5334-4EDB-8F6F-05824BB4FAAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +295,10 @@ Global
 		{86EF41AB-60EE-434A-80DD-3F1A9F1878EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86EF41AB-60EE-434A-80DD-3F1A9F1878EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86EF41AB-60EE-434A-80DD-3F1A9F1878EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43D7AC1D-5334-4EDB-8F6F-05824BB4FAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43D7AC1D-5334-4EDB-8F6F-05824BB4FAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43D7AC1D-5334-4EDB-8F6F-05824BB4FAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43D7AC1D-5334-4EDB-8F6F-05824BB4FAAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -323,6 +331,7 @@ Global
 		{37C04A0B-D0D5-44AA-9BEE-1C2D1D415B2B} = {5D9D3955-5715-4B28-AFFF-8E6FEC4BDFCB}
 		{009CF327-32F7-47E2-86DD-BD7D06CD650E} = {F64DF147-CDD2-4899-A895-6DAF3C9CE9C9}
 		{86EF41AB-60EE-434A-80DD-3F1A9F1878EF} = {3AF40D5C-B2F2-4006-8E76-75374B98775E}
+		{43D7AC1D-5334-4EDB-8F6F-05824BB4FAAE} = {34D70CF9-FF09-473B-BA5F-2664488F6787}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7074A3B-DE49-4ABE-AACF-75F7EDD6E520}

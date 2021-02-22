@@ -7,8 +7,6 @@ namespace UniversityEmailProcessor
 {
     public class UniversityEmailService : IEmailService
     {
-        private IUniversityEmailManager _firstHandler;
-
         private List<IUniversityEmailManager> _handlers = new List<IUniversityEmailManager>(new IUniversityEmailManager[]
         {
             new HREmailManager(),
@@ -18,11 +16,6 @@ namespace UniversityEmailProcessor
        
         public UniversityEmailService()
         {
-            //_firstHandler = new HREmailManager();
-            //var _secondHandler = new FinanceEmailManager();
-            //var _thirdHandler = new AdminEmailManager();
-            //_firstHandler.SetNextHandler(_secondHandler);
-            //_secondHandler.SetNextHandler(_thirdHandler);
             SetChain();
         }
 

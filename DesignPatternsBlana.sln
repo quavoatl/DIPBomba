@@ -107,13 +107,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorDriver", "MediatorD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bridge", "Bridge", "{3AF40D5C-B2F2-4006-8E76-75374B98775E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeImplementation", "BridgeImplementation\BridgeImplementation.csproj", "{86EF41AB-60EE-434A-80DD-3F1A9F1878EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeImplementation", "BridgeImplementation\BridgeImplementation.csproj", "{86EF41AB-60EE-434A-80DD-3F1A9F1878EF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototype2", "Prototype2", "{34D70CF9-FF09-473B-BA5F-2664488F6787}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeV2", "PrototypeV2\PrototypeV2.csproj", "{43D7AC1D-5334-4EDB-8F6F-05824BB4FAAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrototypeV2", "PrototypeV2\PrototypeV2.csproj", "{43D7AC1D-5334-4EDB-8F6F-05824BB4FAAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterV2", "AdapterV2\AdapterV2.csproj", "{927A6D6A-57AC-445F-A011-67E1DBB11D23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterV2", "AdapterV2\AdapterV2.csproj", "{927A6D6A-57AC-445F-A011-67E1DBB11D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{3AAD6D46-A137-46D9-8883-55CD4C11E9C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -305,6 +307,10 @@ Global
 		{927A6D6A-57AC-445F-A011-67E1DBB11D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{927A6D6A-57AC-445F-A011-67E1DBB11D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{927A6D6A-57AC-445F-A011-67E1DBB11D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AAD6D46-A137-46D9-8883-55CD4C11E9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAD6D46-A137-46D9-8883-55CD4C11E9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAD6D46-A137-46D9-8883-55CD4C11E9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAD6D46-A137-46D9-8883-55CD4C11E9C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
